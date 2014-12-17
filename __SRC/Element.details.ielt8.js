@@ -44,7 +44,7 @@ var __URL_TO_DETAILS_BEHAVIOR__ = "/Element.details.ielt8.htc";
 	            			while(!detailsMarker && (detailsMarker = child.childNodes[++j]) && !isCssClass(detailsMarker, "details-marker")) {
 	            				detailsMarker = void 0;
 	            			}
-						if(detailsMarker)detailsMarker.innerHTML = open ? "▼" : "▶";
+						if(detailsMarker)detailsMarker.innerHTML = open ? "▼ " : "▶ ";
 	            		}
 	            		else child.style.display = open ? "" : "none";
             		}

@@ -15,8 +15,8 @@
 			"details{display:block}" +
 			"details.▶>*{display:none}" +
 			"details summary,details.▶>summary,details>.▼▼{display:block}" +
-			"details.▶ .details-marker:before{content:'▶'}" +
-			"details .details-marker:before{content:'▼'}" +
+			"details.▶ .details-marker:before{content:'▶ '}" +
+			"details .details-marker:before{content:'▼ '}" +
 		"</style>");
 
 		var _Element = global["Element"] || (global["Element"] = {}),
