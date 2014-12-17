@@ -13,9 +13,9 @@
 		//style
 		document.head.insertAdjacentHTML("beforeend", "<br><style>" +//<br> need for all IE
 			"details{display:block}" +
-			"details.►>*{display:none}" +
-			"details summary,details.►>summary,details>.▼▼{display:block}" +
-			"details.► .details-marker:before{content:'►'}" +
+			"details.▶>*{display:none}" +
+			"details summary,details.▶>summary,details>.▼▼{display:block}" +
+			"details.▶ .details-marker:before{content:'▶'}" +
 			"details .details-marker:before{content:'▼'}" +
 		"</style>");
 
@@ -48,7 +48,7 @@
 
 				booleanValue = detailsShim(this, booleanValue);
 				
-				addOrRemoveCssClass(!booleanValue, this, "►");
+				addOrRemoveCssClass(!booleanValue, this, "▶");
 				booleanValue ?
 					this.setAttribute(_openAttributeReplacement, "", 1) :
 					this.removeAttribute(_openAttributeReplacement, 1)

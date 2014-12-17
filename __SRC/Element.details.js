@@ -32,7 +32,7 @@ HTMLElement.prototype.insertAdjacentHTML = https://gist.github.com/1276030
 			"details{display:block}" +
 			"details>*{display:none}" +
 			"details>summary,details>summary,details>.▼▼{display:block}" +
-			"details .details-marker:before{content:'►'}" +
+			"details .details-marker:before{content:'▶'}" +
 			"details.▼ .details-marker:before{content:'▼'}" +
 			"details.▼>*{display:block}" +
 		"</style>");

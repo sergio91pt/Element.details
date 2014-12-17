@@ -44,7 +44,7 @@ var __URL_TO_DETAILS_BEHAVIOR__ = "/Element.details.ielt8.htc";
 	            			while(!detailsMarker && (detailsMarker = child.childNodes[++j]) && !isCssClass(detailsMarker, "details-marker")) {
 	            				detailsMarker = void 0;
 	            			}
-	            			if(detailsMarker)detailsMarker.innerHTML = open ? "▼" : "►";
+						if(detailsMarker)detailsMarker.innerHTML = open ? "▼" : "▶";
 	            		}
 	            		else child.style.display = open ? "" : "none";
             		}
@@ -64,7 +64,7 @@ var __URL_TO_DETAILS_BEHAVIOR__ = "/Element.details.ielt8.htc";
 
 				booleanValue = detailsShim(this, booleanValue);
 				
-				addOrRemoveCssClass(!booleanValue, this, "►");
+				addOrRemoveCssClass(!booleanValue, this, "▶");
 				booleanValue ?
 					this.setAttribute(_openAttributeReplacement, "", 1) :
 					this.removeAttribute(_openAttributeReplacement, 1)
@@ -153,7 +153,7 @@ var __URL_TO_DETAILS_BEHAVIOR__ = "/Element.details.ielt8.htc";
 			details.insertBefore(summary, details.childNodes[0]);
 			//Create `details-marker` and put it as a summary first child
 			document.createElement('x-i');
-			summary.insertAdjacentHTML("afterbegin", '<x-i class=details-marker>' + (prevValue ? "▼" : "►") + '</x-i>');
+			summary.insertAdjacentHTML("afterbegin", '<x-i class=details-marker>' + (prevValue ? "▼" : "▶") + '</x-i>');
 			
 			//For access from keyboard
 			summary.tabIndex = 0;
